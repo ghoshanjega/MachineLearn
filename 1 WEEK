@@ -1,0 +1,46 @@
+WEEK 1
+A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E. 
+ 
+Supervised Learning 
+Unsupervised Learning 
+Reinforcement Learning 
+Recommender systems 
+ 
+ 
+SUPERVISED LEARNING 
+The right answer is given and then the algorithm is supposed to find the correct value. AKA Regression.  
+Supervised learning problems are categorized into "regression" and "classification" problems. In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a classification problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories. 
+ 
+2 types 
+Continuous items – regression 
+Discrete – classification  
+ 
+UNSUPERVISED LEARNING 
+The result is not specified. The algorithm is supposed to find a meaningful pattern in the data. 
+Clustering – grouping a common data set. 
+Unsupervised learning allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don't necessarily know the effect of the variables. 
+We can derive this structure by clustering the data based on relationships among the variables in the data. 
+With unsupervised learning there is no feedback based on the prediction results. 
+Example: 
+Clustering: Take a collection of 1,000,000 different genes, and find a way to automatically group these genes into groups that are somehow similar or related by different variables, such as lifespan, location, roles, and so on. 
+Non-clustering: The "Cocktail Party Algorithm", allows you to find structure in a chaotic environment. (i.e. identifying individual voices and music from a mesh of sounds at a cocktail party). 
+ 
+MODEL REPRESENTATION 
+Hypothesis – predicting the y value for the given x. 
+
+ 
+LINEAR REGRESSION 
+Sdf m – number of training set 
+Sub x – the x value 
+Sub y 
+The h(x) is a linear representation. 
+Cost function - We can measure the accuracy of our hypothesis function by using a cost function. This takes an average difference (actually a fancier version of an average) of all the results of the hypothesis with inputs from x's and the actual output y's. This function is otherwise called the "Squared error function", or "Mean squared error".  
+
+Cost function can be seen as a 'U' shape and has a global minimum point. 
+ 
+GRADIENT DESCENT – minimizing the Cost. "Making the hypothesis the best fit ofr the training data set". The way we do this is by taking the derivative (the tangential line to a function) of our cost function. The slope of the tangent is the derivative at that point and it will give us a direction to move towards. We make steps down the cost function in the direction with the steepest descent. The size of each step is determined by the parameter α, which is called the learning rate. 
+ ![title](Pictures/MLgradientdescent.png)
+ 
+ Alpha - "learing rate"  will be larger if the steps need to large and vice versa. 
+
+ 
